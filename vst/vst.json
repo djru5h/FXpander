@@ -1,0 +1,19 @@
+{
+  "name": "FXpander",
+  "vendor": "Ru5h",
+  "uid": "R5FX",
+  "version": 1004,
+  "so": "r5hfxpander.so",
+  "params": "params.json",
+  "layout": "layout.conf",
+  "art": "html",
+  "effect": true,
+  "cc": false,
+  "nrpn": false,
+  "build": {
+    "root": "..",
+    "sources": ["src/fxpander.c"],
+    "cflags": ["-Isrc"],
+    "libs": ["-ldl", "-lpthread"]
+  }
+}

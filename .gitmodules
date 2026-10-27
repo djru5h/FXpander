@@ -1,0 +1,4 @@
+[submodule "mpc-vst-plugins"]
+	path = mpc-vst-plugins
+	url = https://github.com/djru5h/mpc-vst-plugins.git
+	branch = ru5h-local

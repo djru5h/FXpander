@@ -1,0 +1,6254 @@
+{
+ "name": "FXpander",
+ "params": [
+  {
+   "key": "status",
+   "name": "Status",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "s1_pick",
+   "name": "FX 1 Browse",
+   "min": 0,
+   "max": 127,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "s1_pick_prev",
+   "name": "FX 1 Prev",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s1_pick_next",
+   "name": "FX 1 Next",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s1_load",
+   "name": "FX 1 Load",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s1_clear",
+   "name": "FX 1 Clear",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s1_name",
+   "name": "FX 1 Plugin",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "s1_on",
+   "name": "FX 1 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "s1_mix",
+   "name": "FX 1 Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%"
+  },
+  {
+   "key": "s2_pick",
+   "name": "FX 2 Browse",
+   "min": 0,
+   "max": 127,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "s2_pick_prev",
+   "name": "FX 2 Prev",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s2_pick_next",
+   "name": "FX 2 Next",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s2_load",
+   "name": "FX 2 Load",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s2_clear",
+   "name": "FX 2 Clear",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s2_name",
+   "name": "FX 2 Plugin",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "s2_on",
+   "name": "FX 2 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "s2_mix",
+   "name": "FX 2 Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%"
+  },
+  {
+   "key": "s3_pick",
+   "name": "FX 3 Browse",
+   "min": 0,
+   "max": 127,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "s3_pick_prev",
+   "name": "FX 3 Prev",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s3_pick_next",
+   "name": "FX 3 Next",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s3_load",
+   "name": "FX 3 Load",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s3_clear",
+   "name": "FX 3 Clear",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s3_name",
+   "name": "FX 3 Plugin",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "s3_on",
+   "name": "FX 3 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "s3_mix",
+   "name": "FX 3 Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%"
+  },
+  {
+   "key": "s4_pick",
+   "name": "FX 4 Browse",
+   "min": 0,
+   "max": 127,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "s4_pick_prev",
+   "name": "FX 4 Prev",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s4_pick_next",
+   "name": "FX 4 Next",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s4_load",
+   "name": "FX 4 Load",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s4_clear",
+   "name": "FX 4 Clear",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s4_name",
+   "name": "FX 4 Plugin",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "s4_on",
+   "name": "FX 4 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "s4_mix",
+   "name": "FX 4 Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%"
+  },
+  {
+   "key": "s1_p01",
+   "name": "FX 1 P1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p02",
+   "name": "FX 1 P2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p03",
+   "name": "FX 1 P3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p04",
+   "name": "FX 1 P4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p05",
+   "name": "FX 1 P5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p06",
+   "name": "FX 1 P6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p07",
+   "name": "FX 1 P7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p08",
+   "name": "FX 1 P8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p09",
+   "name": "FX 1 P9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p10",
+   "name": "FX 1 P10",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p11",
+   "name": "FX 1 P11",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p12",
+   "name": "FX 1 P12",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p13",
+   "name": "FX 1 P13",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p14",
+   "name": "FX 1 P14",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p15",
+   "name": "FX 1 P15",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p16",
+   "name": "FX 1 P16",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p17",
+   "name": "FX 1 P17",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p18",
+   "name": "FX 1 P18",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p19",
+   "name": "FX 1 P19",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p20",
+   "name": "FX 1 P20",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p21",
+   "name": "FX 1 P21",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p22",
+   "name": "FX 1 P22",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p23",
+   "name": "FX 1 P23",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p24",
+   "name": "FX 1 P24",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p25",
+   "name": "FX 1 P25",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p26",
+   "name": "FX 1 P26",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p27",
+   "name": "FX 1 P27",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p28",
+   "name": "FX 1 P28",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p29",
+   "name": "FX 1 P29",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p30",
+   "name": "FX 1 P30",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p31",
+   "name": "FX 1 P31",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p32",
+   "name": "FX 1 P32",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p33",
+   "name": "FX 1 P33",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p34",
+   "name": "FX 1 P34",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p35",
+   "name": "FX 1 P35",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p36",
+   "name": "FX 1 P36",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p37",
+   "name": "FX 1 P37",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p38",
+   "name": "FX 1 P38",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p39",
+   "name": "FX 1 P39",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p40",
+   "name": "FX 1 P40",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p41",
+   "name": "FX 1 P41",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p42",
+   "name": "FX 1 P42",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p43",
+   "name": "FX 1 P43",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p44",
+   "name": "FX 1 P44",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p45",
+   "name": "FX 1 P45",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p46",
+   "name": "FX 1 P46",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p47",
+   "name": "FX 1 P47",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p48",
+   "name": "FX 1 P48",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p49",
+   "name": "FX 1 P49",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p50",
+   "name": "FX 1 P50",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p51",
+   "name": "FX 1 P51",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p52",
+   "name": "FX 1 P52",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p53",
+   "name": "FX 1 P53",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p54",
+   "name": "FX 1 P54",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p55",
+   "name": "FX 1 P55",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p56",
+   "name": "FX 1 P56",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p57",
+   "name": "FX 1 P57",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p58",
+   "name": "FX 1 P58",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p59",
+   "name": "FX 1 P59",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p60",
+   "name": "FX 1 P60",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p61",
+   "name": "FX 1 P61",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p62",
+   "name": "FX 1 P62",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p63",
+   "name": "FX 1 P63",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_p64",
+   "name": "FX 1 P64",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p01",
+   "name": "FX 2 P1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p02",
+   "name": "FX 2 P2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p03",
+   "name": "FX 2 P3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p04",
+   "name": "FX 2 P4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p05",
+   "name": "FX 2 P5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p06",
+   "name": "FX 2 P6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p07",
+   "name": "FX 2 P7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p08",
+   "name": "FX 2 P8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p09",
+   "name": "FX 2 P9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p10",
+   "name": "FX 2 P10",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p11",
+   "name": "FX 2 P11",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p12",
+   "name": "FX 2 P12",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p13",
+   "name": "FX 2 P13",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p14",
+   "name": "FX 2 P14",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p15",
+   "name": "FX 2 P15",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p16",
+   "name": "FX 2 P16",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p17",
+   "name": "FX 2 P17",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p18",
+   "name": "FX 2 P18",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p19",
+   "name": "FX 2 P19",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p20",
+   "name": "FX 2 P20",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p21",
+   "name": "FX 2 P21",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p22",
+   "name": "FX 2 P22",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p23",
+   "name": "FX 2 P23",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p24",
+   "name": "FX 2 P24",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p25",
+   "name": "FX 2 P25",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p26",
+   "name": "FX 2 P26",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p27",
+   "name": "FX 2 P27",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p28",
+   "name": "FX 2 P28",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p29",
+   "name": "FX 2 P29",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p30",
+   "name": "FX 2 P30",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p31",
+   "name": "FX 2 P31",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p32",
+   "name": "FX 2 P32",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p33",
+   "name": "FX 2 P33",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p34",
+   "name": "FX 2 P34",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p35",
+   "name": "FX 2 P35",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p36",
+   "name": "FX 2 P36",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p37",
+   "name": "FX 2 P37",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p38",
+   "name": "FX 2 P38",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p39",
+   "name": "FX 2 P39",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p40",
+   "name": "FX 2 P40",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p41",
+   "name": "FX 2 P41",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p42",
+   "name": "FX 2 P42",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p43",
+   "name": "FX 2 P43",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p44",
+   "name": "FX 2 P44",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p45",
+   "name": "FX 2 P45",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p46",
+   "name": "FX 2 P46",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p47",
+   "name": "FX 2 P47",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p48",
+   "name": "FX 2 P48",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p49",
+   "name": "FX 2 P49",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p50",
+   "name": "FX 2 P50",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p51",
+   "name": "FX 2 P51",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p52",
+   "name": "FX 2 P52",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p53",
+   "name": "FX 2 P53",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p54",
+   "name": "FX 2 P54",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p55",
+   "name": "FX 2 P55",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p56",
+   "name": "FX 2 P56",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p57",
+   "name": "FX 2 P57",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p58",
+   "name": "FX 2 P58",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p59",
+   "name": "FX 2 P59",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p60",
+   "name": "FX 2 P60",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p61",
+   "name": "FX 2 P61",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p62",
+   "name": "FX 2 P62",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p63",
+   "name": "FX 2 P63",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s2_p64",
+   "name": "FX 2 P64",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p01",
+   "name": "FX 3 P1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p02",
+   "name": "FX 3 P2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p03",
+   "name": "FX 3 P3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p04",
+   "name": "FX 3 P4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p05",
+   "name": "FX 3 P5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p06",
+   "name": "FX 3 P6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p07",
+   "name": "FX 3 P7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p08",
+   "name": "FX 3 P8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p09",
+   "name": "FX 3 P9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p10",
+   "name": "FX 3 P10",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p11",
+   "name": "FX 3 P11",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p12",
+   "name": "FX 3 P12",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p13",
+   "name": "FX 3 P13",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p14",
+   "name": "FX 3 P14",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p15",
+   "name": "FX 3 P15",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p16",
+   "name": "FX 3 P16",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p17",
+   "name": "FX 3 P17",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p18",
+   "name": "FX 3 P18",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p19",
+   "name": "FX 3 P19",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p20",
+   "name": "FX 3 P20",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p21",
+   "name": "FX 3 P21",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p22",
+   "name": "FX 3 P22",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p23",
+   "name": "FX 3 P23",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p24",
+   "name": "FX 3 P24",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p25",
+   "name": "FX 3 P25",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p26",
+   "name": "FX 3 P26",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p27",
+   "name": "FX 3 P27",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p28",
+   "name": "FX 3 P28",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p29",
+   "name": "FX 3 P29",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p30",
+   "name": "FX 3 P30",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p31",
+   "name": "FX 3 P31",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p32",
+   "name": "FX 3 P32",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p33",
+   "name": "FX 3 P33",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p34",
+   "name": "FX 3 P34",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p35",
+   "name": "FX 3 P35",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p36",
+   "name": "FX 3 P36",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p37",
+   "name": "FX 3 P37",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p38",
+   "name": "FX 3 P38",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p39",
+   "name": "FX 3 P39",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p40",
+   "name": "FX 3 P40",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p41",
+   "name": "FX 3 P41",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p42",
+   "name": "FX 3 P42",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p43",
+   "name": "FX 3 P43",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p44",
+   "name": "FX 3 P44",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p45",
+   "name": "FX 3 P45",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p46",
+   "name": "FX 3 P46",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p47",
+   "name": "FX 3 P47",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p48",
+   "name": "FX 3 P48",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p49",
+   "name": "FX 3 P49",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p50",
+   "name": "FX 3 P50",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p51",
+   "name": "FX 3 P51",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p52",
+   "name": "FX 3 P52",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p53",
+   "name": "FX 3 P53",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p54",
+   "name": "FX 3 P54",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p55",
+   "name": "FX 3 P55",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p56",
+   "name": "FX 3 P56",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p57",
+   "name": "FX 3 P57",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p58",
+   "name": "FX 3 P58",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p59",
+   "name": "FX 3 P59",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p60",
+   "name": "FX 3 P60",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p61",
+   "name": "FX 3 P61",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p62",
+   "name": "FX 3 P62",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p63",
+   "name": "FX 3 P63",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s3_p64",
+   "name": "FX 3 P64",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p01",
+   "name": "FX 4 P1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p02",
+   "name": "FX 4 P2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p03",
+   "name": "FX 4 P3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p04",
+   "name": "FX 4 P4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p05",
+   "name": "FX 4 P5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p06",
+   "name": "FX 4 P6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p07",
+   "name": "FX 4 P7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p08",
+   "name": "FX 4 P8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p09",
+   "name": "FX 4 P9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p10",
+   "name": "FX 4 P10",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p11",
+   "name": "FX 4 P11",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p12",
+   "name": "FX 4 P12",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p13",
+   "name": "FX 4 P13",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p14",
+   "name": "FX 4 P14",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p15",
+   "name": "FX 4 P15",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p16",
+   "name": "FX 4 P16",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p17",
+   "name": "FX 4 P17",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p18",
+   "name": "FX 4 P18",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p19",
+   "name": "FX 4 P19",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p20",
+   "name": "FX 4 P20",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p21",
+   "name": "FX 4 P21",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p22",
+   "name": "FX 4 P22",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p23",
+   "name": "FX 4 P23",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p24",
+   "name": "FX 4 P24",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p25",
+   "name": "FX 4 P25",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p26",
+   "name": "FX 4 P26",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p27",
+   "name": "FX 4 P27",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p28",
+   "name": "FX 4 P28",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p29",
+   "name": "FX 4 P29",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p30",
+   "name": "FX 4 P30",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p31",
+   "name": "FX 4 P31",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p32",
+   "name": "FX 4 P32",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p33",
+   "name": "FX 4 P33",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p34",
+   "name": "FX 4 P34",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p35",
+   "name": "FX 4 P35",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p36",
+   "name": "FX 4 P36",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p37",
+   "name": "FX 4 P37",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p38",
+   "name": "FX 4 P38",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p39",
+   "name": "FX 4 P39",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p40",
+   "name": "FX 4 P40",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p41",
+   "name": "FX 4 P41",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p42",
+   "name": "FX 4 P42",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p43",
+   "name": "FX 4 P43",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p44",
+   "name": "FX 4 P44",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p45",
+   "name": "FX 4 P45",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p46",
+   "name": "FX 4 P46",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p47",
+   "name": "FX 4 P47",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p48",
+   "name": "FX 4 P48",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p49",
+   "name": "FX 4 P49",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p50",
+   "name": "FX 4 P50",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p51",
+   "name": "FX 4 P51",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p52",
+   "name": "FX 4 P52",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p53",
+   "name": "FX 4 P53",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p54",
+   "name": "FX 4 P54",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p55",
+   "name": "FX 4 P55",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p56",
+   "name": "FX 4 P56",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p57",
+   "name": "FX 4 P57",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p58",
+   "name": "FX 4 P58",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p59",
+   "name": "FX 4 P59",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p60",
+   "name": "FX 4 P60",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p61",
+   "name": "FX 4 P61",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p62",
+   "name": "FX 4 P62",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p63",
+   "name": "FX 4 P63",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s4_p64",
+   "name": "FX 4 P64",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s1_up",
+   "name": "FX 1 Move Up",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s1_down",
+   "name": "FX 1 Move Down",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s2_up",
+   "name": "FX 2 Move Up",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s2_down",
+   "name": "FX 2 Move Down",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s3_up",
+   "name": "FX 3 Move Up",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s3_down",
+   "name": "FX 3 Move Down",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s4_up",
+   "name": "FX 4 Move Up",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s4_down",
+   "name": "FX 4 Move Down",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s5_pick",
+   "name": "FX 5 Browse",
+   "min": 0,
+   "max": 127,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "s5_pick_prev",
+   "name": "FX 5 Prev",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s5_pick_next",
+   "name": "FX 5 Next",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s5_load",
+   "name": "FX 5 Load",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s5_clear",
+   "name": "FX 5 Clear",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s5_name",
+   "name": "FX 5 Plugin",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "s5_on",
+   "name": "FX 5 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "s5_mix",
+   "name": "FX 5 Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%"
+  },
+  {
+   "key": "s5_up",
+   "name": "FX 5 Move Up",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s5_down",
+   "name": "FX 5 Move Down",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s6_pick",
+   "name": "FX 6 Browse",
+   "min": 0,
+   "max": 127,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "s6_pick_prev",
+   "name": "FX 6 Prev",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s6_pick_next",
+   "name": "FX 6 Next",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s6_load",
+   "name": "FX 6 Load",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s6_clear",
+   "name": "FX 6 Clear",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s6_name",
+   "name": "FX 6 Plugin",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "s6_on",
+   "name": "FX 6 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "s6_mix",
+   "name": "FX 6 Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%"
+  },
+  {
+   "key": "s6_up",
+   "name": "FX 6 Move Up",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s6_down",
+   "name": "FX 6 Move Down",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s7_pick",
+   "name": "FX 7 Browse",
+   "min": 0,
+   "max": 127,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "s7_pick_prev",
+   "name": "FX 7 Prev",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s7_pick_next",
+   "name": "FX 7 Next",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s7_load",
+   "name": "FX 7 Load",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s7_clear",
+   "name": "FX 7 Clear",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s7_name",
+   "name": "FX 7 Plugin",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "s7_on",
+   "name": "FX 7 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "s7_mix",
+   "name": "FX 7 Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%"
+  },
+  {
+   "key": "s7_up",
+   "name": "FX 7 Move Up",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s7_down",
+   "name": "FX 7 Move Down",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s8_pick",
+   "name": "FX 8 Browse",
+   "min": 0,
+   "max": 127,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "s8_pick_prev",
+   "name": "FX 8 Prev",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s8_pick_next",
+   "name": "FX 8 Next",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s8_load",
+   "name": "FX 8 Load",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s8_clear",
+   "name": "FX 8 Clear",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s8_name",
+   "name": "FX 8 Plugin",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "s8_on",
+   "name": "FX 8 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "s8_mix",
+   "name": "FX 8 Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%"
+  },
+  {
+   "key": "s8_up",
+   "name": "FX 8 Move Up",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s8_down",
+   "name": "FX 8 Move Down",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s5_p01",
+   "name": "FX 5 P1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p02",
+   "name": "FX 5 P2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p03",
+   "name": "FX 5 P3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p04",
+   "name": "FX 5 P4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p05",
+   "name": "FX 5 P5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p06",
+   "name": "FX 5 P6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p07",
+   "name": "FX 5 P7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p08",
+   "name": "FX 5 P8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p09",
+   "name": "FX 5 P9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p10",
+   "name": "FX 5 P10",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p11",
+   "name": "FX 5 P11",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p12",
+   "name": "FX 5 P12",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p13",
+   "name": "FX 5 P13",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p14",
+   "name": "FX 5 P14",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p15",
+   "name": "FX 5 P15",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p16",
+   "name": "FX 5 P16",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p17",
+   "name": "FX 5 P17",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p18",
+   "name": "FX 5 P18",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p19",
+   "name": "FX 5 P19",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p20",
+   "name": "FX 5 P20",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p21",
+   "name": "FX 5 P21",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p22",
+   "name": "FX 5 P22",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p23",
+   "name": "FX 5 P23",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p24",
+   "name": "FX 5 P24",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p25",
+   "name": "FX 5 P25",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p26",
+   "name": "FX 5 P26",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p27",
+   "name": "FX 5 P27",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p28",
+   "name": "FX 5 P28",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p29",
+   "name": "FX 5 P29",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p30",
+   "name": "FX 5 P30",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p31",
+   "name": "FX 5 P31",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p32",
+   "name": "FX 5 P32",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p33",
+   "name": "FX 5 P33",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p34",
+   "name": "FX 5 P34",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p35",
+   "name": "FX 5 P35",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p36",
+   "name": "FX 5 P36",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p37",
+   "name": "FX 5 P37",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p38",
+   "name": "FX 5 P38",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p39",
+   "name": "FX 5 P39",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p40",
+   "name": "FX 5 P40",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p41",
+   "name": "FX 5 P41",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p42",
+   "name": "FX 5 P42",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p43",
+   "name": "FX 5 P43",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p44",
+   "name": "FX 5 P44",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p45",
+   "name": "FX 5 P45",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p46",
+   "name": "FX 5 P46",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p47",
+   "name": "FX 5 P47",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p48",
+   "name": "FX 5 P48",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p49",
+   "name": "FX 5 P49",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p50",
+   "name": "FX 5 P50",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p51",
+   "name": "FX 5 P51",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p52",
+   "name": "FX 5 P52",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p53",
+   "name": "FX 5 P53",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p54",
+   "name": "FX 5 P54",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p55",
+   "name": "FX 5 P55",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p56",
+   "name": "FX 5 P56",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p57",
+   "name": "FX 5 P57",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p58",
+   "name": "FX 5 P58",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p59",
+   "name": "FX 5 P59",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p60",
+   "name": "FX 5 P60",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p61",
+   "name": "FX 5 P61",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p62",
+   "name": "FX 5 P62",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p63",
+   "name": "FX 5 P63",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s5_p64",
+   "name": "FX 5 P64",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p01",
+   "name": "FX 6 P1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p02",
+   "name": "FX 6 P2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p03",
+   "name": "FX 6 P3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p04",
+   "name": "FX 6 P4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p05",
+   "name": "FX 6 P5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p06",
+   "name": "FX 6 P6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p07",
+   "name": "FX 6 P7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p08",
+   "name": "FX 6 P8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p09",
+   "name": "FX 6 P9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p10",
+   "name": "FX 6 P10",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p11",
+   "name": "FX 6 P11",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p12",
+   "name": "FX 6 P12",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p13",
+   "name": "FX 6 P13",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p14",
+   "name": "FX 6 P14",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p15",
+   "name": "FX 6 P15",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p16",
+   "name": "FX 6 P16",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p17",
+   "name": "FX 6 P17",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p18",
+   "name": "FX 6 P18",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p19",
+   "name": "FX 6 P19",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p20",
+   "name": "FX 6 P20",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p21",
+   "name": "FX 6 P21",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p22",
+   "name": "FX 6 P22",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p23",
+   "name": "FX 6 P23",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p24",
+   "name": "FX 6 P24",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p25",
+   "name": "FX 6 P25",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p26",
+   "name": "FX 6 P26",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p27",
+   "name": "FX 6 P27",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p28",
+   "name": "FX 6 P28",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p29",
+   "name": "FX 6 P29",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p30",
+   "name": "FX 6 P30",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p31",
+   "name": "FX 6 P31",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p32",
+   "name": "FX 6 P32",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p33",
+   "name": "FX 6 P33",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p34",
+   "name": "FX 6 P34",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p35",
+   "name": "FX 6 P35",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p36",
+   "name": "FX 6 P36",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p37",
+   "name": "FX 6 P37",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p38",
+   "name": "FX 6 P38",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p39",
+   "name": "FX 6 P39",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p40",
+   "name": "FX 6 P40",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p41",
+   "name": "FX 6 P41",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p42",
+   "name": "FX 6 P42",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p43",
+   "name": "FX 6 P43",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p44",
+   "name": "FX 6 P44",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p45",
+   "name": "FX 6 P45",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p46",
+   "name": "FX 6 P46",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p47",
+   "name": "FX 6 P47",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p48",
+   "name": "FX 6 P48",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p49",
+   "name": "FX 6 P49",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p50",
+   "name": "FX 6 P50",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p51",
+   "name": "FX 6 P51",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p52",
+   "name": "FX 6 P52",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p53",
+   "name": "FX 6 P53",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p54",
+   "name": "FX 6 P54",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p55",
+   "name": "FX 6 P55",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p56",
+   "name": "FX 6 P56",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p57",
+   "name": "FX 6 P57",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p58",
+   "name": "FX 6 P58",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p59",
+   "name": "FX 6 P59",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p60",
+   "name": "FX 6 P60",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p61",
+   "name": "FX 6 P61",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p62",
+   "name": "FX 6 P62",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p63",
+   "name": "FX 6 P63",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s6_p64",
+   "name": "FX 6 P64",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p01",
+   "name": "FX 7 P1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p02",
+   "name": "FX 7 P2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p03",
+   "name": "FX 7 P3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p04",
+   "name": "FX 7 P4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p05",
+   "name": "FX 7 P5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p06",
+   "name": "FX 7 P6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p07",
+   "name": "FX 7 P7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p08",
+   "name": "FX 7 P8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p09",
+   "name": "FX 7 P9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p10",
+   "name": "FX 7 P10",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p11",
+   "name": "FX 7 P11",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p12",
+   "name": "FX 7 P12",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p13",
+   "name": "FX 7 P13",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p14",
+   "name": "FX 7 P14",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p15",
+   "name": "FX 7 P15",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p16",
+   "name": "FX 7 P16",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p17",
+   "name": "FX 7 P17",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p18",
+   "name": "FX 7 P18",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p19",
+   "name": "FX 7 P19",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p20",
+   "name": "FX 7 P20",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p21",
+   "name": "FX 7 P21",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p22",
+   "name": "FX 7 P22",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p23",
+   "name": "FX 7 P23",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p24",
+   "name": "FX 7 P24",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p25",
+   "name": "FX 7 P25",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p26",
+   "name": "FX 7 P26",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p27",
+   "name": "FX 7 P27",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p28",
+   "name": "FX 7 P28",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p29",
+   "name": "FX 7 P29",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p30",
+   "name": "FX 7 P30",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p31",
+   "name": "FX 7 P31",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p32",
+   "name": "FX 7 P32",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p33",
+   "name": "FX 7 P33",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p34",
+   "name": "FX 7 P34",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p35",
+   "name": "FX 7 P35",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p36",
+   "name": "FX 7 P36",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p37",
+   "name": "FX 7 P37",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p38",
+   "name": "FX 7 P38",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p39",
+   "name": "FX 7 P39",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p40",
+   "name": "FX 7 P40",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p41",
+   "name": "FX 7 P41",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p42",
+   "name": "FX 7 P42",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p43",
+   "name": "FX 7 P43",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p44",
+   "name": "FX 7 P44",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p45",
+   "name": "FX 7 P45",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p46",
+   "name": "FX 7 P46",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p47",
+   "name": "FX 7 P47",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p48",
+   "name": "FX 7 P48",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p49",
+   "name": "FX 7 P49",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p50",
+   "name": "FX 7 P50",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p51",
+   "name": "FX 7 P51",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p52",
+   "name": "FX 7 P52",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p53",
+   "name": "FX 7 P53",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p54",
+   "name": "FX 7 P54",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p55",
+   "name": "FX 7 P55",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p56",
+   "name": "FX 7 P56",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p57",
+   "name": "FX 7 P57",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p58",
+   "name": "FX 7 P58",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p59",
+   "name": "FX 7 P59",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p60",
+   "name": "FX 7 P60",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p61",
+   "name": "FX 7 P61",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p62",
+   "name": "FX 7 P62",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p63",
+   "name": "FX 7 P63",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s7_p64",
+   "name": "FX 7 P64",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p01",
+   "name": "FX 8 P1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p02",
+   "name": "FX 8 P2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p03",
+   "name": "FX 8 P3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p04",
+   "name": "FX 8 P4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p05",
+   "name": "FX 8 P5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p06",
+   "name": "FX 8 P6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p07",
+   "name": "FX 8 P7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p08",
+   "name": "FX 8 P8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p09",
+   "name": "FX 8 P9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p10",
+   "name": "FX 8 P10",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p11",
+   "name": "FX 8 P11",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p12",
+   "name": "FX 8 P12",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p13",
+   "name": "FX 8 P13",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p14",
+   "name": "FX 8 P14",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p15",
+   "name": "FX 8 P15",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p16",
+   "name": "FX 8 P16",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p17",
+   "name": "FX 8 P17",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p18",
+   "name": "FX 8 P18",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p19",
+   "name": "FX 8 P19",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p20",
+   "name": "FX 8 P20",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p21",
+   "name": "FX 8 P21",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p22",
+   "name": "FX 8 P22",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p23",
+   "name": "FX 8 P23",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p24",
+   "name": "FX 8 P24",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p25",
+   "name": "FX 8 P25",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p26",
+   "name": "FX 8 P26",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p27",
+   "name": "FX 8 P27",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p28",
+   "name": "FX 8 P28",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p29",
+   "name": "FX 8 P29",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p30",
+   "name": "FX 8 P30",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p31",
+   "name": "FX 8 P31",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p32",
+   "name": "FX 8 P32",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p33",
+   "name": "FX 8 P33",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p34",
+   "name": "FX 8 P34",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p35",
+   "name": "FX 8 P35",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p36",
+   "name": "FX 8 P36",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p37",
+   "name": "FX 8 P37",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p38",
+   "name": "FX 8 P38",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p39",
+   "name": "FX 8 P39",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p40",
+   "name": "FX 8 P40",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p41",
+   "name": "FX 8 P41",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p42",
+   "name": "FX 8 P42",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p43",
+   "name": "FX 8 P43",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p44",
+   "name": "FX 8 P44",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p45",
+   "name": "FX 8 P45",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p46",
+   "name": "FX 8 P46",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p47",
+   "name": "FX 8 P47",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p48",
+   "name": "FX 8 P48",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p49",
+   "name": "FX 8 P49",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p50",
+   "name": "FX 8 P50",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p51",
+   "name": "FX 8 P51",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p52",
+   "name": "FX 8 P52",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p53",
+   "name": "FX 8 P53",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p54",
+   "name": "FX 8 P54",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p55",
+   "name": "FX 8 P55",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p56",
+   "name": "FX 8 P56",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p57",
+   "name": "FX 8 P57",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p58",
+   "name": "FX 8 P58",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p59",
+   "name": "FX 8 P59",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p60",
+   "name": "FX 8 P60",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p61",
+   "name": "FX 8 P61",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p62",
+   "name": "FX 8 P62",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p63",
+   "name": "FX 8 P63",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "s8_p64",
+   "name": "FX 8 P64",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "pr_slot",
+   "name": "Preset Slot",
+   "min": 0,
+   "max": 31,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "pr_slot_prev",
+   "name": "Preset Prev",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "pr_slot_next",
+   "name": "Preset Next",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "pr_recall",
+   "name": "Recall Preset",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "pr_save",
+   "name": "Save Preset",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "pr_delete",
+   "name": "Delete Preset",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "pr_name",
+   "name": "Preset Name",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "pr_info",
+   "name": "Preset Contents",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "kb_1",
+   "name": "Key 1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_2",
+   "name": "Key 2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_3",
+   "name": "Key 3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_4",
+   "name": "Key 4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_5",
+   "name": "Key 5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_6",
+   "name": "Key 6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_7",
+   "name": "Key 7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_8",
+   "name": "Key 8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_9",
+   "name": "Key 9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_0",
+   "name": "Key 0",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_q",
+   "name": "Key Q",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_w",
+   "name": "Key W",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_e",
+   "name": "Key E",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_r",
+   "name": "Key R",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_t",
+   "name": "Key T",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_y",
+   "name": "Key Y",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_u",
+   "name": "Key U",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_i",
+   "name": "Key I",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_o",
+   "name": "Key O",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_p",
+   "name": "Key P",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_a",
+   "name": "Key A",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_s",
+   "name": "Key S",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_d",
+   "name": "Key D",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_f",
+   "name": "Key F",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_g",
+   "name": "Key G",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_h",
+   "name": "Key H",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_j",
+   "name": "Key J",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_k",
+   "name": "Key K",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_l",
+   "name": "Key L",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_dash",
+   "name": "Key -",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_z",
+   "name": "Key Z",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_x",
+   "name": "Key X",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_c",
+   "name": "Key C",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_v",
+   "name": "Key V",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_b",
+   "name": "Key B",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_n",
+   "name": "Key N",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_m",
+   "name": "Key M",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_space",
+   "name": "Key Space",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_del",
+   "name": "Key Del",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "kb_clear",
+   "name": "Key Clear",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s1_drop",
+   "name": "FX 1 Choose",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s2_drop",
+   "name": "FX 2 Choose",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s3_drop",
+   "name": "FX 3 Choose",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s4_drop",
+   "name": "FX 4 Choose",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s5_drop",
+   "name": "FX 5 Choose",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s6_drop",
+   "name": "FX 6 Choose",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s7_drop",
+   "name": "FX 7 Choose",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "s8_drop",
+   "name": "FX 8 Choose",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "dd_shown",
+   "name": "Plugin List",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "dd_prev",
+   "name": "List Prev Page",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "dd_next",
+   "name": "List Next Page",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "dd_close",
+   "name": "List Close",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "momentary": true,
+   "type": "trigger"
+  },
+  {
+   "key": "dd_title",
+   "name": "List Title",
+   "type": "readout",
+   "display": "string"
+  },
+  {
+   "key": "dd_1",
+   "name": "List 1",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_2",
+   "name": "List 2",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_3",
+   "name": "List 3",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_4",
+   "name": "List 4",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_5",
+   "name": "List 5",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_6",
+   "name": "List 6",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_7",
+   "name": "List 7",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_8",
+   "name": "List 8",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_9",
+   "name": "List 9",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_10",
+   "name": "List 10",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_11",
+   "name": "List 11",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_12",
+   "name": "List 12",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_13",
+   "name": "List 13",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_14",
+   "name": "List 14",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_15",
+   "name": "List 15",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_16",
+   "name": "List 16",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_17",
+   "name": "List 17",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_18",
+   "name": "List 18",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_19",
+   "name": "List 19",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_20",
+   "name": "List 20",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_21",
+   "name": "List 21",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_22",
+   "name": "List 22",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_23",
+   "name": "List 23",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_24",
+   "name": "List 24",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_25",
+   "name": "List 25",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_26",
+   "name": "List 26",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_27",
+   "name": "List 27",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_28",
+   "name": "List 28",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_29",
+   "name": "List 29",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_30",
+   "name": "List 30",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_31",
+   "name": "List 31",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_32",
+   "name": "List 32",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_33",
+   "name": "List 33",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_34",
+   "name": "List 34",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_35",
+   "name": "List 35",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_36",
+   "name": "List 36",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_37",
+   "name": "List 37",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_38",
+   "name": "List 38",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_39",
+   "name": "List 39",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_40",
+   "name": "List 40",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_41",
+   "name": "List 41",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_42",
+   "name": "List 42",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_43",
+   "name": "List 43",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_44",
+   "name": "List 44",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_45",
+   "name": "List 45",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_46",
+   "name": "List 46",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_47",
+   "name": "List 47",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_48",
+   "name": "List 48",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_49",
+   "name": "List 49",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_50",
+   "name": "List 50",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_51",
+   "name": "List 51",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  },
+  {
+   "key": "dd_52",
+   "name": "List 52",
+   "min": 0,
+   "max": 1,
+   "default": 0,
+   "display": "string"
+  }
+ ]
+}

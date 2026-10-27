@@ -1,0 +1,7 @@
+# build output (vst/build.sh, harness/run.sh, tools/pack.sh); the .tar goes on a release
+/vst/build/
+/harness/build/
+/tools/*.tar
+# YES-SL 9000 writes its user presets to the working directory when the harness runs it
+/YES-SL 9000 Presets/
+__pycache__/
