@@ -4,7 +4,7 @@
  * a fixed parameter table (vst/make_skin.py, generated params.h); to each hosted plugin ("child") it is the host.
  *
  * Parameters (order in make_skin.py; found here by key, see params_init): per slot a browse list over MPC's
- * registered effects (MPC.settings, pluginList-arm), Load / Clear / Up / Down, On and Mix, plus 64 knobs that map onto
+ * registered effects (MPC.settings, PLUGIN_LIST), Load / Clear / Up / Down, On and Mix, plus 64 knobs that map onto
  * the child's parameters (its automatable ones, in order; all of them if it marks none). The mapping is fixed for a
  * given plugin, so automation and Q-Links keep their meaning. Names and value texts are the child's own. Chain
  * presets (all slots, named on an on-screen keyboard) are files beside the Synths folder and MPC's PRESET menu.
@@ -47,6 +47,13 @@ enum { K_NONE, K_STATUS, K_SLOT, K_POOL, K_PR, K_KEY, K_DD, K_DDROW };
 #define NAME_MAX_LEN 24
 #define KEY_DEL 0x7f
 #define KEY_CLEAR 0x01
+/* MPC.settings' plugin list: Gen1 (armv7) MPCs register plugins under "pluginList-arm", Gen2 (aarch64) ones under
+ * "pluginList-arm-64bit". Each build hosts only its own generation's plugins. */
+#if defined(__aarch64__)
+#define PLUGIN_LIST "pluginList-arm-64bit"
+#else
+#define PLUGIN_LIST "pluginList-arm"
+#endif
 #define MAXBLK 1024                     /* frames per chain pass; bigger host blocks run in pieces */
 #define MAXCH 8                         /* a child's inputs/outputs; the extras get silence / a junk buffer */
 #define REPORTS_PER_BLOCK 16            /* automates told to MPC per audio block (the rest follow next block) */
@@ -211,7 +218,7 @@ static void load_list(void) {
     if (!xml || fread(xml, 1, (size_t)size, f) != (size_t)size) { free(xml); fclose(f); return; }
     fclose(f);
     xml[size] = 0;
-    const char *sec = strstr(xml, "name=\"pluginList-arm\"");
+    const char *sec = strstr(xml, "name=\"" PLUGIN_LIST "\"");
     const char *sec_end = sec ? strstr(sec, "</KNOWNPLUGINS>") : NULL;
     for (const char *p = sec; p && sec_end && (p = strstr(p, "<PLUGIN")) && p < sec_end && g_nlist < MAXLIST;) {
         const char *e = strstr(p, "/>");

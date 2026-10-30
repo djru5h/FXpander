@@ -32,7 +32,8 @@ eight heavy ones can be more than one core can handle, so build big chains a plu
 
 - An MPC running MPC OS in standalone mode, with **root SSH access**. Installing a third-party plugin means copying it
   to the MPC's drive and adding it to MPC's plugin list (`MPC.settings`), and MPC OS has no menu for that.
-  Tested on an MPC One.
+  Tested on an MPC One (Gen1, 32-bit) and an MPC XL (Gen2, 64-bit, MPC OS 3.9.1). Each build hosts only its own
+  generation's plugins.
 - A computer with `ssh` and `scp` (Windows 10/11, macOS and Linux all have them).
 
 ## Install
@@ -59,6 +60,18 @@ eight heavy ones can be more than one core can handle, so build big chains a plu
 FXpander lists the effects registered in `MPC.settings` (VST effects, not instruments, whose file exists). It doesn't
 list itself.
 
+### Gen2 MPCs (MPC Live III, MPC XL and the other 64-bit models)
+
+These need the 64-bit build, `FXpander-<version>-mpc-aarch64.zip` from the release. Unzip it, copy the folder to the
+MPC and run its installer into the internal drive's Synths folder (`/nvme/Synths` on a Live III or an XL; Gen2 mounts
+USB and SD drives `noexec`, so plugins can't run from them):
+```
+scp -r FXpander-<version> root@MPC-IP:/tmp/
+ssh root@MPC-IP sh /tmp/FXpander-<version>/install.sh -t /nvme/Synths
+```
+It stops and restarts the MPC app and backs up `MPC.settings`; `uninstall.sh` removes it. On Gen2 FXpander reads
+the 64-bit plugin list (`pluginList-arm-64bit`) and keeps chain presets in `/nvme/FXpander Presets`.
+
 ### Updating
 
 Copy the new `r5hfxpander.tar` and `update-fxpander.sh` to `/tmp` the same way and run
@@ -74,17 +87,20 @@ installed again to play their chains.
 
 ## Building from source
 
-Linux or WSL, with `python3` and Docker. The build runs in Docker images (an ARMv7 GCC for the MPC, plus the skin
-renderer), so you don't need a cross compiler. Docker needs ARM emulation (`binfmt`/QEMU), which Docker Desktop
+Linux or WSL, with `python3` and Docker. The build runs in Docker images (ARMv7 and ARM64 GCCs for the two MPC
+generations, plus the skin renderer), so you don't need a cross compiler. Docker needs ARM emulation (`binfmt`/QEMU), which Docker Desktop
 includes.
 
 ```
 git clone --recursive https://github.com/djru5h/FXpander.git
 cd FXpander
-vst/build.sh       # the skin and vst/build/r5hfxpander.so
+vst/build.sh       # the skin, vst/build/r5hfxpander.so (Gen1) and vst/build/aarch64/r5hfxpander.so (Gen2)
 tools/pack.sh      # tools/r5hfxpander.tar, the folder the MPC expects
 harness/run.sh     # offline checks under ASan/UBSan (x86 Docker)
+harness/run.sh aarch64   # the same checks on ARM64 (Gen2), under UBSan
 ```
+
+The Gen2 zip is made with the framework's `tools/release.py --so vst/build/aarch64/r5hfxpander.so ...`.
 
 The skin is built by [mpc-vst-plugins](https://github.com/sd88me/mpc-vst-plugins). Its scripts come in as a git
 submodule (`mpc-vst-plugins/`, branch `ru5h-local`); set `MPC_VST=` to use another checkout. FXpander itself doesn't

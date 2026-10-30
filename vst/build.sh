@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Build FXpander: vst/make_skin.py (params.json, layout.conf), then mpc-vst-plugins' gen_vst.py (params.h, the skin
-# folder, the plugin-list entry; branch ru5h-local), then the armhf .so from src/fxpander.c alone, plus the on-device
-# test host (harness/devhost.c). FXpander is its own VST2 (it hosts plugins), so it doesn't link the framework's
-# wrapper and tools/build_port.sh isn't used. Output in vst/build/. The framework is the mpc-vst-plugins submodule, else
-# a checkout next to this repo; MPC_VST overrides both.
+# folder, the plugin-list entry; branch ru5h-local), then the .so from src/fxpander.c alone, plus the on-device test
+# host (harness/devhost.c), for both generations: armhf (Gen1 MPCs, vst/build/) and aarch64 (Gen2, vst/build/aarch64/).
+# FXpander is its own VST2 (it hosts plugins), so it doesn't link the framework's wrapper and tools/build_port.sh isn't
+# used. The framework is the mpc-vst-plugins submodule, else a checkout next to this repo; MPC_VST overrides both.
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(cd "$HERE/.." && pwd)"
@@ -24,4 +24,14 @@ docker run --rm --platform linux/arm/v7 -u "$U" -v "$ROOT":/b -w /b arm32v7/gcc:
   echo "highest glibc: $(readelf -V vst/build/r5hfxpander.so | grep -o "GLIBC_[0-9.]*" | sort -uV | tail -1)"
   $CC -Ivst/build harness/devhost.c -ldl -lpthread -lm -o vst/build/devhost-armhf
 '
-md5sum "$ROOT/vst/build/r5hfxpander.so"
+# Gen2 runs MPC OS 3.x only (glibc 2.39), so bookworm (2.36) is fine
+mkdir -p "$ROOT/vst/build/aarch64"
+docker run --rm --platform linux/arm64 -u "$U" -v "$ROOT":/b -w /b arm64v8/gcc:12-bookworm bash -euc '
+  CC="gcc -O2 -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-format-truncation"
+  $CC -fPIC -shared -fvisibility=hidden -Isrc -Ivst/build src/fxpander.c -ldl -lpthread -lm -Wl,--no-undefined -o vst/build/aarch64/r5hfxpander.so
+  strip vst/build/aarch64/r5hfxpander.so
+  echo "aarch64 exported: $(readelf --dyn-syms -W vst/build/aarch64/r5hfxpander.so | grep -E " GLOBAL .* [0-9]+ [A-Za-z]" | grep -v UND | awk "{print \$8}" | tr "\n" " ")"
+  echo "aarch64 highest glibc: $(readelf -V vst/build/aarch64/r5hfxpander.so | grep -o "GLIBC_[0-9.]*" | sort -uV | tail -1)"
+  $CC -Ivst/build harness/devhost.c -ldl -lpthread -lm -o vst/build/aarch64/devhost
+'
+md5sum "$ROOT/vst/build/r5hfxpander.so" "$ROOT/vst/build/aarch64/r5hfxpander.so"

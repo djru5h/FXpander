@@ -2,8 +2,14 @@
 # Offline checks, in the gcc:12 Docker image (nothing to install): builds FXpander, the test children (testfx.c) and
 # x86 builds of P-Valley PNG and YES-SL 9000 from their repos next to this one (mpc-noise-gen, mpc-channel-strip; gain
 # stand-ins if they aren't there), all under ASan/UBSan, and runs harness/host.c against them. Exit status is the checks'.
-#   harness/run.sh
+# With `aarch64` the same checks run in an arm64 container (the Gen2 CPU; QEMU on an x86 host), under UBSan only:
+# ASan doesn't run under QEMU's user-mode emulation. That build reads the Gen2 plugin list (PLUGIN_LIST).
+#   harness/run.sh [aarch64]
 set -euo pipefail
+PLAT=() B=harness/build SAN="-O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer"
+if [ "${1:-}" = aarch64 ]; then
+    PLAT=(--platform linux/arm64) B=harness/build-aarch64 SAN="-O1 -g -fsanitize=undefined -fno-omit-frame-pointer"
+fi
 HERE="$(cd "$(dirname "$0")/.." && pwd)"
 DEV="$(cd "$HERE/.." && pwd)"
 if [ -z "${MPC_VST:-}" ]; then   # the framework: the submodule, else a checkout next to this one
@@ -13,9 +19,9 @@ REAL=1
 [ -d "$DEV/mpc-noise-gen/src" ] && [ -d "$DEV/mpc-channel-strip/src" ] || REAL=0
 python3 "$HERE/vst/make_skin.py" >/dev/null
 python3 "$MPC_VST/tools/gen_vst.py" "$HERE/vst/vst.json" --params-h >/dev/null
-docker run --rm -e REAL=$REAL -v "$HERE":/w -v "$DEV":/d:ro -v "$MPC_VST":/mv:ro -w /w gcc:12 bash -euc '
-  B=harness/build; mkdir -p $B; rm -rf $B/presets
-  SAN="-O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer"
+docker run --rm ${PLAT[@]+"${PLAT[@]}"} -e REAL=$REAL -e B="$B" -e SAN="$SAN" -v "$HERE":/w -v "$DEV":/d:ro -v "$MPC_VST":/mv:ro -w /w gcc:12 bash -euc '
+  mkdir -p $B; rm -rf $B/presets
+  echo "--- building for $(uname -m)"
   CC="gcc -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-format-truncation -fPIC"
   W=/mv/wrapper
   $CC $SAN -shared -Isrc -Ivst/build src/fxpander.c -ldl -lpthread -lm -o $B/r5hfxpander.so
@@ -36,6 +42,6 @@ docker run --rm -e REAL=$REAL -v "$HERE":/w -v "$DEV":/d:ro -v "$MPC_VST":/mv:ro
     export FXPANDER_NO_REAL=1
   fi
   $CC $SAN -Ivst/build harness/host.c -ldl -lpthread -lm -o $B/host
-  echo "--- checks (ASan/UBSan)"
+  echo "--- checks ($SAN)"
   UBSAN_OPTIONS=print_stacktrace=1:halt_on_error=1 ASAN_OPTIONS=detect_leaks=1 $B/host /w/$B/r5hfxpander.so /w/$B
 '

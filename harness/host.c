@@ -16,6 +16,11 @@
 
 #define NSLOTS 8
 #define POOL 64
+#if defined(__aarch64__)   /* the plugin list FXpander reads (see PLUGIN_LIST in src/fxpander.c) */
+#define PLUGIN_LIST "pluginList-arm-64bit"
+#else
+#define PLUGIN_LIST "pluginList-arm"
+#endif
 enum { S_PICK, S_PREV, S_NEXT, S_LOAD, S_CLEAR, S_NAME, S_ON, S_MIX, S_UP, S_DOWN, S_DROP, S_N };
 #define BLK 128
 
@@ -171,7 +176,7 @@ int main(int argc, char **argv) {
     /* a fake MPC.settings: what's listed, what isn't (instrument, missing file, not VST format, FXpander itself) */
     snprintf(path, sizeof path, "%s/test.settings", dir);
     FILE *f = fopen(path, "w");
-    fprintf(f, "<PROPERTIES>\n  <VALUE name=\"pluginList-arm\">\n    <KNOWNPLUGINS>\n");
+    fprintf(f, "<PROPERTIES>\n  <VALUE name=\"" PLUGIN_LIST "\">\n    <KNOWNPLUGINS>\n");
     struct { const char *name, *so, *uid, *inst, *fmt; } ents[] = {
         {"Gain FX", "testfx_gain.so", "54476e31", "0", "VST"},
         {"&#201;mile Chunk", "testfx_chunk.so", "54476e32", "0", "VST"},

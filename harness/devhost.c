@@ -241,8 +241,18 @@ int main(int argc, char **argv) {
         f->dispatcher(f, 24, 0, len, copy, 0);
         int same = 1;
         for (int s = 0; s < NSLOTS; s++) {
-            same &= !strcmp(txt(e, 7, SLOT_PARAM(s, S_NAME)), txt(f, 7, SLOT_PARAM(s, S_NAME)));
-            for (int k = 0; k < POOL; k++) same &= !strcmp(txt(e, 7, POOL_PARAM(s, k)), txt(f, 7, POOL_PARAM(s, k)));
+            char a[256], b[256];
+            snprintf(a, sizeof a, "%s", txt(e, 7, SLOT_PARAM(s, S_NAME)));
+            snprintf(b, sizeof b, "%s", txt(f, 7, SLOT_PARAM(s, S_NAME)));
+            if (strcmp(a, b)) { same = 0; printf("  differs: FX %d name '%s' vs '%s'\n", s + 1, a, b); }
+            for (int k = 0; k < POOL; k++) {
+                snprintf(a, sizeof a, "%s", txt(e, 7, POOL_PARAM(s, k)));
+                snprintf(b, sizeof b, "%s", txt(f, 7, POOL_PARAM(s, k)));
+                if (strcmp(a, b)) {
+                    same = 0;
+                    printf("  differs: FX %d knob %d %s: '%s' vs '%s'\n", s + 1, k + 1, txt(e, 8, POOL_PARAM(s, k)), a, b);
+                }
+            }
         }
         printf("chunk %ld bytes, restore into a second instance: %s\n", (long)len, same ? "same plugins and values" : "DIFFERENT");
         for (int s = 0; s < NSLOTS; s++) {
