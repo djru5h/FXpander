@@ -3,7 +3,7 @@
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")/.." && pwd)"
 DEST="${1:-$HERE/tools}"
-NAME="Ru5h - VST - FXpander"
+NAME="Ru5h Music - VST - FXpander"
 STAGE="$(mktemp -d)"
 cp -a "$HERE/vst/build/skin/$NAME" "$STAGE/"
 cp "$HERE/vst/build/r5hfxpander.so" "$STAGE/$NAME/"

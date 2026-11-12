@@ -6,7 +6,7 @@
 set -e
 DRIVE="${DRIVE:-/media/MPC_ONE}"
 T=/tmp/r5hfxpander.tar
-NAME="Ru5h - VST - FXpander"
+NAME="Ru5h Music - VST - FXpander"
 D="$DRIVE/Synths/$NAME"
 PREV="$DRIVE/fxpander-prev"
 N="$DRIVE/fxpander-new"
